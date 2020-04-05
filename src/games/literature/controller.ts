@@ -70,6 +70,18 @@ var hostGame = async (owner: Player) => {
 		}
 	}
 	g.log('CREATE:' + owner.name)
+
+	var p2 = await Player.build('Naven', 2)
+	await joinGame(g, p2)
+	var p3 = await Player.build('Vivek', 3)
+	await joinGame(g, p3)
+	var p4 = await Player.build('Bharath', 4)
+	await joinGame(g, p4)
+	var p5 = await Player.build('Tejus', 5)
+	await joinGame(g, p5)
+	var p6 = await Player.build('Shohan', 6)
+	await joinGame(g, p)
+
 	return g
 }
 
